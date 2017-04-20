@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn_pin_mode, btn_parallex_mode;
+    Button btn_pin_mode, btn_parallex_mode, btn_auto_scrolling_slider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn_pin_mode = (Button) findViewById(R.id.btn_pin_mode);
         btn_parallex_mode = (Button) findViewById(R.id.btn_parallex_mode);
+        btn_auto_scrolling_slider = (Button) findViewById(R.id.btn_auto_scrolling_slider);
 
         btn_parallex_mode.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, CollapseModePin.class));
+            }
+        });
+
+        btn_auto_scrolling_slider.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AutoScrollingSlider.class));
             }
         });
     }

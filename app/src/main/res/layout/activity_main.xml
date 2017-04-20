@@ -24,5 +24,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="PinCollapseMode" />
+
+        <Button
+            android:id="@+id/btn_auto_scrolling_slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="AutoScroll Slider" />
     </LinearLayout>
 </RelativeLayout>
